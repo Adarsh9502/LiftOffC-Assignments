@@ -1,22 +1,15 @@
-//Write a program to accept an employee’s data & display it to him.
-
 #include<stdio.h>
-
 int main()
 {
-    int eno;
-    char ename[50];
-    float salary;
-    printf("\nEnter the employee name: ");
-    gets(ename);
-    printf("\nEnter the employee no.: ");
-    scanf("%d", &eno);
-    printf("\nEnter the salary: ");
-    scanf("%f", &salary);
-
-    printf("\nEmployee No.: %d",eno);
-    printf("\nEmployee Name: %s",ename);
-    printf("\nEmployee salary %f",salary);
+    int i=0, N;
+    printf("Enter the value of N: ");
+    scanf("%d", &N);
+    do
+    {
+        printf("\nSqaure of %d is\t%d", i, i*i);
+        printf("\nCube of %d is\t%d", i, i*i*i);
+        i++;
+    } while(i<=N);
 
     return 0;
 }
